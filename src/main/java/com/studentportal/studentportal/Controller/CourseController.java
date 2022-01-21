@@ -2,6 +2,7 @@ package com.studentportal.studentportal.Controller;
 
 import com.studentportal.studentportal.Entity.CourseEntity;
 import com.studentportal.studentportal.Repository.CourseRepository;
+// import com.studentportal.studentportal.Repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -13,6 +14,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 public class CourseController {
     @Autowired
     private CourseRepository repository;
+    // @Autowired 
+    // private StudentRepository strepository;
     @GetMapping("/Courses")
     public String viewCourse(Model model){
         model.addAttribute("CoursesList",repository.findAll());
