@@ -26,12 +26,9 @@ public class StudentController {
         repository.save(student);
         return "redirect:/Students";
     }
-    //Delete
-    // @DeleteMapping("/delete/{id}")
-    // public String deleteStudent(@PathVariable("id") Integer id) {
-    //     repository.deleteById(id);
-    //     return "redirect:/Students";
-    // }
+    // delete the data using the id 
+
+    
     // // Edit
     // @GetMapping("/edit/{id}")
     // public String editStudent(@PathVariable("id") Integer id, Model model) {

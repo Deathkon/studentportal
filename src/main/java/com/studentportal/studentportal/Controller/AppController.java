@@ -2,10 +2,13 @@ package com.studentportal.studentportal.Controller;
 
 import com.studentportal.studentportal.Entity.CourseEntity;
 import com.studentportal.studentportal.Repository.CourseRepository;
+import com.studentportal.studentportal.Repository.StudentRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+
 
 @Controller
 public class AppController {
@@ -18,4 +21,5 @@ public class AppController {
         model.addAttribute("CoursesList", CourseRepository.findAll());
         return "index";
     }
+
 }
